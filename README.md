@@ -1,16 +1,4 @@
-# ecoscan
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# EcoScan
+A mobile QR code scanner app that promotes eco-awareness by displaying sustainability tips or product impact information alongside scanned results. Built with Flutter.
+>>>>>>> 878e1592857e4493db526fcd4e7dc01d22346fac
