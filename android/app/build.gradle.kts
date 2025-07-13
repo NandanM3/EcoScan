@@ -8,11 +8,13 @@ plugins {
 android {
     namespace = "com.example.ecoscan"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+
+        isCoreLibraryDesugaringEnabled = true
     }
 
     kotlinOptions {
@@ -37,6 +39,18 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+    dependencies {
+    // ✅ Desugaring support library
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
+
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
+    // Example: QR code scanner or other libraries
+    // implementation("your.other.libraries")
+}
 }
 
 flutter {
